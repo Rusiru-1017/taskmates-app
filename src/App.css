@@ -399,3 +399,24 @@ body {
   .modal-split { flex-direction: column; }
   .modal-left, .modal-right { width: 100%; border-right: none; border-bottom: 2px solid var(--border-blue); }
 }
+
+/* --- FIX: Team Modal Icon Buttons Visibility (Light Mode Fix) --- */
+/* Modal එක ඇතුලේ Icon Buttons වල පාට හදන්න */
+.modal-box .icon-btn {
+  border: 1px solid var(--border) !important;
+  background: var(--bg-card) !important;
+  color: var(--text-primary) !important; /* Light mode එකේ කළු පාට */
+}
+
+.modal-box .icon-btn:hover {
+  border-color: var(--border-blue) !important;
+  background: var(--accent-soft) !important;
+  color: var(--accent) !important; /* Hover කළාම නිල් පාට */
+}
+
+/* Delete Button එක Hover කළාම රතු පාට වෙන්න */
+.modal-box .icon-btn.danger:hover {
+  border-color: var(--danger) !important;
+  background: rgba(239, 68, 68, 0.1) !important;
+  color: var(--danger) !important;
+}
